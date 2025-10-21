@@ -1,0 +1,610 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <!-- Google analytics tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-STGLQW4BJX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-STGLQW4BJX');
+    </script>
+
+    <!-- Title -->
+    <title>Jiageng Mao</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1000">
+
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style>
+  </head>
+
+  <body id="body">
+
+    <div id="main">
+      <div id="intro">
+        <div id="intro-text">
+          <h1>Jiageng Mao</h1>
+          <p>
+            Jiageng is a PhD student at the University of Southern California, advised by Prof. Yue Wang. His research centers on physical AI.
+            His goal is to bring AI to the real world, by developing algorithms across robotics, computer vision, and natural language processing.
+            He is particularly interested in intuitive physics, large vision-language(-action) models, and world modeling.
+            His research is supported by a Qualcomm Innovation Fellowship.
+            <br>
+            <br>
+            <!-- <a href="javascript:toggle_bio()">Formal Bio</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+            <a href="https://twitter.com/PointsCoder">X (Twitter)</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://scholar.google.com/citations?hl=en&user=5S9eZbcAAAAJ&view_op=list_works">G. Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://linkedin.com/in/jiageng-m-778096146">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/PointsCoder">Github</a>
+            <br><br>
+            jiagengm at usc dot edu
+            <br><br>
+          </p>
+        </div>
+        <div id="intro-image">
+          <img src="images/me/Official_small.jpg">
+        </div>
+      </div>
+
+      <div id="filters" class="button-group">
+        <!-- <button class="button" data-filter="*">Show All</button> -->
+        <button class="button" data-filter=".highlight">Highlights</button>
+        <button class="button is-checked" data-filter=".publication">Publications</button>
+        <button class="button" data-filter=".talk">Talks</button>
+        <button class="button" data-filter=".mentor">Mentorship</button>
+        <button class="button" data-filter=".service">Service</button>
+      </div>
+
+      <div class="grid">
+
+        <!-- Preview Videos -->
+        <!-- <div class="list-item highlight previews" data-category="highlight">
+
+          <a href="https://generalistai.com/"><video class="preview1" playsinline="" muted="" autoplay="" loop=""><source src="images/video-generalist-teaser-crop.mp4" type="video/mp4"></video></a>
+
+          <a href="https://say-can.github.io/"><video class="preview2" playsinline="" muted="" autoplay="" loop=""><source src="images/video-saycan.mp4" type="video/mp4"></video></a>
+
+          <a href="https://pointscoder.github.io/"><video class="preview3" playsinline="" muted="" autoplay="" loop=""><source src="images/papers/physworld.mp4" type="video/mp4"></video></a>
+        </div> -->
+
+        <!-- Previews Carousel -->
+        <div class="list-item highlight previews-carousel" data-category="highlight" aria-label="Preview videos">
+          <button class="carousel-btn prev" aria-label="Previous">&#10094;</button>
+        
+          <div class="previews track" id="previewsTrack">
+                      
+            <a href="https://pointscoder.github.io/" class="slide">
+              <video playsinline muted autoplay loop>
+                <source src="images/papers/physworld.mp4" type="video/mp4">
+              </video>
+            </a>
+
+            <a href="https://sihengz02.github.io/RoLA/" class="slide">
+              <video playsinline muted autoplay loop>
+                <source src="images/papers/rola_teaser.mp4" type="video/mp4">
+              </video>
+            </a>
+
+
+          </div>
+        
+          <button class="carousel-btn next" aria-label="Next">&#10095;</button>
+        </div>
+
+        <!-- Truncated Set of Highlights (Shown by Default) -->
+        <div id="main-highlights">
+
+          <div class="list-item highlight" data-category="highlight">
+            <p class="date">2025</p>  <a href="https://www.arxiv.org/abs/2509.22970">RoLA</a> is accepted to <i>CoRL 2025</i> and presented as a spotlight talk at ICCV workshop on digital twins.
+          </div>
+
+          <div class="list-item highlight" data-category="highlight">
+            <p class="date">2025</p>  <a href="https://usc-gvl.github.io/UH-1/">UH-1</a> is accepted to <i>HUMANOIDS 2025</i> as an oral presentation.
+          </div>
+
+          <div class="list-item highlight" data-category="highlight">
+            <p class="date">2025</p>  Working at <a href="https://deepmind.google/">Google DeepMind</a> on world modeling for robotics.
+          </div>
+
+          <div class="list-item highlight" data-category="highlight">
+            <p class="date">2025</p>  <a href="https://arxiv.org/abs/2501.16411">PhysBench</a> is accepted to <i>ICLR 2025</i> as an oral presentation (Top 1.8%).
+          </div>
+
+          <div class="list-item highlight" data-category="highlight">
+            <p class="date">2025</p>  <a href="https://arxiv.org/abs/2501.00601">DreamDrive</a> is accepted to <i>ICRA 2025</i> and featured in <a href="https://www.youtube.com/live/k82RwXqZHY8?si=kJ1zWT56Gytlq12r&t=4387">NVIDIA's keynote talk</a> at CES 2025.
+          </div>
+
+          <div class="list-item highlight" data-category="highlight">
+            <p class="date">2024</p>  Awarded <a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/2024-north-america">Qualcomm Innovation Fellowship</a>.
+          </div>  
+
+          <div class="list-item highlight" data-category="highlight">
+            <p class="date">2024</p>  <a href="https://arxiv.org/abs/2407.04689">RAM</a> is accepted to <i>CoRL 2024</i> as an oral presentation (Top 5%).
+          </div>
+
+          <div class="list-item highlight" data-category="highlight">
+            <p class="date">2024</p>  <a href="https://arxiv.org/abs/2311.10813">Agent-Driver</a> is accepted to <i>COLM 2024</i> with Top 1% reviewer ratings.
+          </div>          
+
+          <div class="list-item highlight" data-category="highlight">
+            <p class="date">2024</p>  Worked at <a href="https://research.nvidia.com/labs/avg/#about">NVIDIA Research</a> on 4D scene generation.
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Publications -->
+        <div class="list-item publication description" data-category="publication">
+          For a more up-to-date list, visit my <a href="https://scholar.google.com/citations?hl=en&user=5S9eZbcAAAAJ&view_op=list_works">Google Scholar</a>
+        </div>
+
+        <div id="main-publications">
+
+          <!-- RoLA -->
+          <div class="list-item publication" data-category="publication">
+            <a href="https://www.arxiv.org/abs/2509.22970" class="thumbnail">
+              <video playsinline="" muted="" autoplay="" loop="" width="180px">
+                <source src="images/papers/rola_concat.mp4" type="video/mp4">
+              </video>
+            </a>
+            <div class="project-description">
+              <h3><a href="https://www.arxiv.org/abs/2509.22970">Robot Learning from Any Images</a></h3>
+              <p>
+                 <b>Jiageng Mao*</b>, Siheng Zhao*, Wei Chow, Zeyu Shangguan, Tianheng Shi, Rong Xue, Yuxi Zheng, Yijia Weng, Yang You, Daniel Seita, Leonidas Guibas, Sergey Zakharov, Vitor Guizilini, Yue Wang.<br>
+                  <i>Conference on Robot Learning (<b>CoRL</b>), 2025.</i><br>
+                  <font color="49bf9"><i>&#9733; Spotlight Talk at ICCV Workshop on Digital Twins&#9733;</i></font><br>
+                  <a href="https://sihengz02.github.io/RoLA/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                  <a href="https://sihengz02.github.io/RoLA/">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+              </p>
+            </div>
+          </div>
+
+          <!-- UH-1 -->
+          <div class="list-item publication" data-category="publication">
+            <a href="https://usc-gvl.github.io/UH-1/" class="thumbnail">
+              <video playsinline="" muted="" autoplay="" loop="" width="180px">
+                <source src="images/papers/uh1.mp4" type="video/mp4">
+              </video>
+            </a>
+            <div class="project-description">
+              <h3><a href="https://usc-gvl.github.io/UH-1/">Universal Humanoid Robot Pose Learning from Internet Human Videos</a></h3>
+              <p>
+                 <b>Jiageng Mao*</b>, Siheng Zhao*, Siqi Song*, Tianheng Shi, Junjie Ye, Mingtong Zhang, Haoran Geng, Jitendra Malik, Vitor Guizilini, Yue Wang.<br>
+                  <i>International Conference on Humanoid Robots (<b>HUMANOIDS</b>), 2025.</i><br>
+                  <font color="49bf9"><i>&#9733; Oral Presentation &#9733;</i></font><br>
+                  <a href="https://usc-gvl.github.io/UH-1/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                  <a href="https://github.com/sihengz02/UH-1">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                  <a href="https://huggingface.co/collections/USC-GVL/universal-humanoid-10-6760c242f3591a933560a23a">Dataset</a>
+              </p>
+            </div>
+          </div>
+
+
+          <!-- PhysBench -->
+          <div class="list-item publication" data-category="publication">
+            <a href="https://physbench.github.io/" class="thumbnail">
+              <video playsinline muted autoplay loop width="180px">
+                <source src="images/papers/physbench.mp4" type="video/mp4">
+              </video>
+            </a>
+            <div class="project-description">
+              <h3><a href="https://physbench.github.io/">PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding</a></h3>
+              <p>
+                Wei Chow*, <b>Jiageng Mao*</b>, Boyi Li, Daniel Seita, Vitor Guizilini, Yue Wang.<br>
+                <i>International Conference on Learning Representations (<b>ICLR</b>), 2025.</i><br>
+                <font color="49bf9"><i>&#9733; Oral Presentation (Top 1.8%) &#9733;</i></font><br>
+                <a href="https://physbench.github.io/">Project Page</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://github.com/USC-GVL/PhysBench">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://huggingface.co/datasets/USC-GVL/PhysBench">Dataset</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- RecFlow Policy -->
+          <!-- <div class="list-item publication" data-category="publication">
+            <a href="https://pointscoder.github.io/" class="thumbnail">
+              <video playsinline muted autoplay loop width="180px">
+                <source src="images/papers/recflow.mp4" type="video/mp4">
+              </video>
+            </a>
+            <div class="project-description">
+              <h3><a href="https://pointscoder.github.io/">RecFlow Policy: Fast and Accurate Visuomotor Policies via Rectified Action Flow</a></h3>
+              <p>
+                Rong Xue*, <b>Jiageng Mao*</b>, Mingtong Zhang, Yue Wang.<br>
+                <i>International Conference on Learning Representations Workshop (<b>ICLRW</b>), 2025.</i><br>
+                <font color="49bf9"><i>&#9733; Oral Presentation, ICLR Robot Learning Workshop &#9733;</i></font><br>
+                <a href="https://pointscoder.github.io/">Project Page</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://pointscoder.github.io/">Code</a>
+              </p>
+            </div>
+          </div> -->
+
+          <!-- DreamDrive -->
+          <div class="list-item publication" data-category="publication">
+            <a href="https://pointscoder.github.io/DreamDrive/" class="thumbnail">
+              <img src="images/papers/dreamdrive.gif" width="180px" alt="DreamDrive">
+            </a>
+            <div class="project-description">
+              <h3><a href="https://pointscoder.github.io/DreamDrive/">DreamDrive: Generative 4D Scene Modeling from Street View Images</a></h3>
+              <p>
+                <b>Jiageng Mao</b>, Boyi Li, Boris Ivanovic, Yuxiao Chen, Yan Wang, Yurong You, Chaowei Xiao, Danfei Xu, Marco Pavone, Yue Wang.<br>
+                <i>International Conference on Robotics and Automation (<b>ICRA</b>), 2025.</i><br>
+                <font color="49bf9"><i>&#9733; Featured in NVIDIA's keynote talk at CES 2025. &#9733;</i></font>&nbsp;&nbsp;<br>
+                <a href="https://www.youtube.com/live/k82RwXqZHY8?si=kJ1zWT56Gytlq12r&t=4387">CES-Video</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://pointscoder.github.io/DreamDrive/">Project Page</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://github.com/PointsCoder">Code</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Agent-Driver -->
+          <div class="list-item publication" data-category="publication">
+            <a href="https://usc-gvl.github.io/Agent-Driver/" class="thumbnail">
+              <img src="images/papers/agentdriver.gif" width="180px" alt="Agent-Driver">
+            </a>
+            <div class="project-description">
+              <h3><a href="https://usc-gvl.github.io/Agent-Driver/">A Langauge Agent for Autonomous Driving</a></h3>
+              <p>
+                <b>Jiageng Mao*</b>, Junjie Ye*, Yuxi Qian, Marco Pavone, Yue Wang.<br>
+                <i>Conference on Language Modeling (<b>COLM</b>), 2024.</i><br>
+                <font color="49bf9"><i>&#9733; Top 1% reviewer ratings (Top 10 out of 1036 submissions). &#9733;</i></font>&nbsp;&nbsp;<br>
+                <a href="https://usc-gvl.github.io/Agent-Driver/">Project Page</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://github.com/USC-GVL/Agent-Driver">Code</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- RAM -->
+          <div class="list-item publication" data-category="publication">
+            <a href="https://yuxuank.com/RAM/" class="thumbnail">
+              <img src="images/papers/ram.gif" width="180px" alt="RAM">
+            </a>
+            <div class="project-description">
+              <h3><a href="https://yuxuank.com/RAM/">RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation</a></h3>
+              <p>
+                Yuxuan Kuang*, Junjie Ye*, Haoran Geng*, <b>Jiageng Mao</b>, Congyue Deng, Leonidas Guibas, He Wang, Yue Wang.<br>
+                <i>Conference on Robot Learning (<b>CORL</b>), 2024.</i><br>
+                <font color="49bf9"><i>&#9733; Oral presentation (Top 5%). &#9733;</i></font>&nbsp;&nbsp;<br>
+                <a href="https://yuxuank.com/RAM/">Project Page</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://github.com/yxKryptonite/RAM_code">Code</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- LLaDA -->
+          <div class="list-item publication" data-category="publication">
+            <a href="https://boyiliee.github.io/llada/" class="thumbnail">
+              <img src="images/papers/llada2.gif" width="180px" alt="LLaDA">
+            </a>
+            <div class="project-description">
+              <h3><a href="https://boyiliee.github.io/llada/">Driving Everywhere with Large Language Model Policy Adaptation</a></h3>
+              <p>
+                Boyi Li, Yue Wang, <b>Jiageng Mao</b>, Boris Ivanovic, Sushant Veer, Karen Leung, Marco Pavone.<br>
+                <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024.</i><br>
+                <font color="49bf9"><i>&#9733; Featured at NVIDIA GTC 2024 & NVIDIA Drive Labs. &#9733;</i></font>&nbsp;&nbsp;<br>
+                <a href="https://www.youtube.com/watch?v=t-UPlPlrYgQ&t=51s">GTC-Video</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://www.youtube.com/watch?v=fQ3HJbEkP4U">DriveLab-Video</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://boyiliee.github.io/llada/">Project Page</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- VOTR -->
+          <div class="list-item publication" data-category="publication">
+            <a href="https://arxiv.org/pdf/2109.02497.pdf" class="thumbnail">
+              <img src="images/papers/iccv21_votr.PNG" width="180px" alt="VOTR">
+            </a>
+            <div class="project-description">
+              <h3><a href="https://arxiv.org/pdf/2109.02497.pdf">Voxel Transformer for 3D Object Detection</a></h3>
+              <p>
+                <b>Jiageng Mao*</b>, Yujing Xue*, Minzhe Niu, Haoyue Bai, Jiashi Feng, Xiaodan Liang, Hang Xu, Chunjing Xu.<br>
+                <i>International Conference on Computer Vision (<b>ICCV</b>), 2021.</i><br>
+                <font color="49bf9"><i>&#9733; Covered at Stanford CS348n. &#9733;</i></font>&nbsp;&nbsp;<br>
+                <a href="http://graphics.stanford.edu/courses/cs348n-22-winter/LectureSlides/FinalSlides/22cs348n-01-10_v1.pdf">Course Link</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://github.com/PointsCoder/VOTR">Code</a>
+              </p>
+            </div>
+          </div>
+
+ 
+          <!-- ICCV 2019 InterpConv -->
+          <div class="list-item publication" data-category="publication">
+            <a href="https://arxiv.org/pdf/1908.04512.pdf" class="thumbnail">
+              <img src="images/papers/iccv19_interpconv.PNG" width="180px" alt="Interpolated Convolution">
+            </a>
+            <div class="project-description">
+              <h3><a href="https://arxiv.org/pdf/1908.04512.pdf">Interpolated Convolutional Networks for 3D Point Cloud Understanding</a></h3>
+              <p>
+                <b>Jiageng Mao</b>, Xiaogang Wang, Hongsheng Li.<br>
+                <i>International Conference on Computer Vision (<b>ICCV</b>), 2019.</i><br>
+                <font color="49bf9"><i>&#9733; Oral presentation (Top 4%). &#9733;</i></font>&nbsp;&nbsp;<br>
+              </p>
+            </div>
+          </div>
+
+
+
+        <!-- All Publications (Click to Show) -->
+        <div id="more-publications" style="display: None">
+
+          <div class="list-item publication" data-category="publication">
+            <a href="https://arxiv.org/pdf/1908.04512.pdf" class="thumbnail">
+              <img src="images/papers/iccv19_interpconv.PNG" width="180px" alt="Interpolated Convolution">
+            </a>
+            <div class="project-description">
+              <h3><a href="https://arxiv.org/pdf/1908.04512.pdf">Interpolated Convolutional Networks for 3D Point Cloud Understanding</a></h3>
+              <p>
+                <b>Jiageng Mao</b>, Xiaogang Wang, Hongsheng Li.<br>
+                <i>International Conference on Computer Vision (<b>ICCV</b>), 2019.</i><br>
+                <font color="49bf9"><i>&#9733; Oral presentation (Top 4%). &#9733;</i></font>&nbsp;&nbsp;<br>
+              </p>
+            </div>
+          </div>
+          
+        </div>
+        
+
+        <!-- Toggle publications button. -->
+        <!-- <div class="list-item publication toggle-button" data-category="publication">
+          <a id="toggle_publications_button" href="javascript:toggle_publications()">Show more publications</a>
+        </div> -->
+
+
+
+        <!-- Talks -->
+        <!-- <div class="list-item talk description" data-category="talk">
+          Some of my slides can be found <a href="https://slides.com/andyzeng">here</a>
+        </div> -->
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date">2025</p> Stanford University (Host: <a href="https://geometry.stanford.edu/">Prof. Leo Guibas's Lab</a>)
+        </div>
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date">2025</p> ICRA 2025 Oral Presentation: <a href="https://pointscoder.github.io/DreamDrive/">DreamDrive: Generative 4D Scene Modeling from Street View Images</a>
+        </div>        
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date">2025</p> Stanford University (Host: <a href="https://msl.stanford.edu/">MSL Lab</a>)
+        </div>        
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date">2025</p> Carnegie Mellon University (Host: <a href="https://safeai-lab.github.io/">Prof. Ding Zhao's Group</a>)
+        </div>  
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date">2024</p> Qualcomm
+        </div>  
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date">2023</p> Cornell University (Host: <a href="https://www.cs.cornell.edu/~kilian/">Prof. Kilian Weinberger's Group</a>)
+        </div>  
+
+        <!-- Misc -->
+
+        <div class="list-item mentor description" data-category="mentor">
+          I feel privileged to mentor and collaborate with many talented students. <br><br>
+          Here are some (not all) students we have worked together:
+        </div>
+
+        <div class="list-item mentor" data-category="mentor">
+          <p class="date">2025</p> Emily Yue-Ting Jia. &nbsp;&nbsp; Publications: <a href="https://physfluid.github.io/">PhysFluid</a> (accepted at ICCV'25, student first author)
+        </div>
+        <div class="list-item mentor" data-category="mentor">
+          <p class="date">2025</p> Zhiyuan Gao. &nbsp;&nbsp; Publications: <a href="https://physfluid.github.io/">WindSeeker</a> (accepted at NeurIPS'25, student first author)
+        </div>
+        <div class="list-item mentor" data-category="mentor">
+          <p class="date">2025</p> Hongyi Jing. &nbsp;&nbsp; Publications: <a href="https://humanoideveryday.github.io/">Humanoid Everyday</a> (in submission, student first author)
+        </div>
+        <div class="list-item mentor" data-category="mentor">
+          <p class="date">2025</p> Zhenyu Zhao. &nbsp;&nbsp; Publications: <a href="https://humanoideveryday.github.io/">Humanoid Everyday</a> (in submission, student first author)
+        </div>
+        <div class="list-item mentor" data-category="mentor">
+          <p class="date">2025</p> Rong Xue. &nbsp;&nbsp; Publications: <a href="https://pointscoder.github.io/">SeFA Policy</a> (in submission, student first author)
+        </div>
+        <div class="list-item mentor" data-category="mentor">
+          <p class="date">2025</p> Tianheng Shi. &nbsp;&nbsp; Publications: <a href="https://usc-gvl.github.io/UH-1/">UH-1</a> and <a href="https://sihengz02.github.io/RoLA/">RoLA</a> (accepted at HUMANOIDS'25 and CoRL'25)
+        </div>
+        <div class="list-item mentor" data-category="mentor">
+          <p class="date">2025</p> Chuye Hong. &nbsp;&nbsp; Publications: <a href="https://usc-gvl.github.io/UH-1/">UH-1</a> (accepted at HUMANOIDS'25)
+        </div>
+        <div class="list-item mentor" data-category="mentor">
+          <p class="date">2024</p> Wei Chow. &nbsp;&nbsp; Publications: <a href="https://physbench.github.io/">PhysBench</a> (accepted at ICLR'25 as oral presentation, student first author)
+        </div>
+        <div class="list-item mentor" data-category="mentor">
+          <p class="date">2024</p> Siqi Song. &nbsp;&nbsp; Publications: <a href="https://usc-gvl.github.io/UH-1/">UH-1</a> (accepted at HUMANOIDS'25, student first author)
+        </div>
+        <div class="list-item mentor" data-category="mentor">
+          <p class="date">2023</p> James Yuxi Qian. &nbsp;&nbsp; Publications: <a href="https://arxiv.org/abs/2310.01415">GPT-Driver</a> and <a href="https://usc-gvl.github.io/Agent-Driver/">Agent-Driver</a> (accepted at NeurIPS-W'23 and COLM'24)
+        </div>
+
+
+        <!-- Service -->
+        <div class="list-item service description" data-category="service">
+          I was a teaching assistant of
+        </div>
+        <div class="list-item service" data-category="service">
+          <p class="date">2025</p> CSCI-677 Robot Perception.
+        </div>
+        <div class="list-item service" data-category="service">
+          <p class="date">2024</p> CSCI-670 Advanced Computer Vision. 
+        </div>
+        <div class="list-item service" data-category="service">
+          <p class="date">2021</p> ENGR-597 Signals and Systems.
+        </div>
+        <div class="list-item service" data-category="service">
+          <p class="date">2020</p> ENGR-197 Multivariable Calculus. 
+        </div>
+        
+       <div class="list-item service description" data-category="service">
+          
+        </div>
+
+        <div class="list-item service description" data-category="service">
+          I served as an organizer/program committee member of
+        </div>
+        <div class="list-item service" data-category="service">
+          <p class="date">2025</p> <a href="https://sites.google.com/mit.edu/multimodal-robotics/home">R:SS MultiSensory Robotics with MultiModal Abilities Workshop.</a>
+        </div>
+        <div class="list-item service" data-category="service">
+          <p class="date">2024</p> <a href="https://vision-language-adr.github.io/">CVPR Vision and Language for Robotics Workshop.</a>
+        </div>
+        <div class="list-item service" data-category="service">
+          <p class="date">2023</p> <a href="https://sites.google.com/view/fmdm-neurips23/">NeurIPS Foundation Models for Decision Making Workshop.</a>
+        </div>
+
+       <div class="list-item service description" data-category="service">
+          
+        </div>
+
+
+        <div class="list-item service description" data-category="service">
+          I served as a reviewer of the major conferences and journals in robotics, computer vision, and machine learning, <br><br>
+          including CVPR, ICCV, ECCV, IJCV, T-PAMI, ICRA, IROS, CoRL, T-RO, NeurIPS, ICML, ICLR, etc.
+        </div>
+
+
+      </div>
+
+      <div id="footer">Website code courtesy of <a href="https://github.com/andyzeng/andyzeng.github.io">Andy Zeng</a>.</div>
+
+    </div>
+
+    <script>
+      // Minimal carousel controls using smooth horizontal scrolling
+      (function () {
+        const track = document.getElementById('previewsTrack');
+        const prevBtn = document.querySelector('.carousel-btn.prev');
+        const nextBtn = document.querySelector('.carousel-btn.next');
+      
+        function getGapPx() {
+          const gap = getComputedStyle(track).gap || '0px';
+          return parseFloat(gap);
+        }
+      
+        function getSlideWidth() {
+          const firstSlide = track.querySelector('.slide');
+          if (!firstSlide) return 0;
+          const rect = firstSlide.getBoundingClientRect();
+          return rect.width + getGapPx();
+        }
+      
+        function scrollBySlides(direction = 1) {
+          const dx = getSlideWidth() * direction;
+          track.scrollBy({ left: dx, behavior: 'smooth' });
+        }
+      
+        prevBtn.addEventListener('click', () => scrollBySlides(-1));
+        nextBtn.addEventListener('click', () => scrollBySlides(1));
+      
+        // Optional: keyboard navigation when the track is focused
+        track.setAttribute('tabindex', '0');
+        track.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowLeft') scrollBySlides(-1);
+          if (e.key === 'ArrowRight') scrollBySlides(1);
+        });
+      })();
+    </script>
+
+
+    <script>
+
+      // Isotope grid.
+      var $grid = $('.grid').isotope({
+        itemSelector: '.list-item',
+        layoutMode: 'fitRows',
+        transitionDuration: 0,
+        stagger: 10,
+        initLayout: false,
+        getSortData: {
+          name: '.name',
+          symbol: '.symbol',
+          number: '.number parseInt',
+          category: '[data-category]',
+          weight: function( itemElem ) {
+            var weight = $( itemElem ).find('.weight').text();
+            return parseFloat( weight.replace( /[\(\)]/g, '') );
+          }
+        }
+      });
+
+      // Bind filter button click.
+      $('#filters').on( 'click', 'button', function() {
+        var filterValue = $( this ).attr('data-filter');
+        localStorage.setItem('filterValue', filterValue);
+        $grid.isotope({ filter: filterValue });
+      });
+
+      // Change is-checked class on buttons.
+      $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function() {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $( this ).addClass('is-checked');
+        });
+      });
+
+      function update_isotope() {
+        // Retrieve cached button click.
+        var defaultFilterValue = localStorage.getItem('filterValue');
+        if (defaultFilterValue == null) {  // || defaultFilterValue === ".highlight"
+          defaultFilterValue = ".highlight"
+        }
+        $grid.isotope({ filter: defaultFilterValue });
+        var buttons = document.getElementsByClassName("button");
+        for (var currButton of buttons) {
+          if (currButton.getAttribute('data-filter') == defaultFilterValue) {
+            currButton.classList.add('is-checked');
+          } else {
+            currButton.classList.remove('is-checked');
+          }
+        }
+      }
+
+      function toggle_bio() {
+        var x = document.getElementById("more-bio");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function toggle_publications() {
+        var x = document.getElementById("main-publications");
+        var y = document.getElementById("more-publications");
+        var b = document.getElementById("toggle_publications_button")
+        if (y.style.display === "none") {
+          x.style.display = "none";
+          y.style.display = "block";
+          b.innerHTML = "Show less publications"
+          update_isotope();
+        } else {
+          x.style.display = "block";
+          y.style.display = "none";
+          b.innerHTML = "Show more publications"
+          update_isotope();
+        }
+      }
+
+      update_isotope();
+
+    </script>
+  </body>
+</html>
