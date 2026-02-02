@@ -1,18 +1,86 @@
 /* CSS Reset: http://meyerweb.com/eric/tools/css/reset */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,25 +88,44 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
   list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -46,7 +133,7 @@ table {
 
 /**************************************************/
 
-#body{
+#body {
   font-family: 'Asap', roboto, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
@@ -216,10 +303,12 @@ h2 {
   grid-column: 1;
   width: 100%;
 }
+
 .preview2 {
   grid-column: 2;
   width: 100%;
 }
+
 .preview3 {
   grid-column: 3;
   width: 100%;
@@ -244,7 +333,7 @@ h2 {
 /* Publication details (thumbnail media, title, and description). */
 
 .thumbnail {
-/*  width: 21%;*/
+  /*  width: 21%;*/
   width: 18%;
   float: left;
   margin-right: 2%;
@@ -308,7 +397,9 @@ h3 a:hover {
 
 /**************************************************/
 /* added layout. */
-.list-item.service.description + .list-item.service{ margin-top: -0.25em; }
+.list-item.service.description+.list-item.service {
+  margin-top: -0.25em;
+}
 
 .previews a {
   display: flex;
@@ -339,13 +430,16 @@ h3 a:hover {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  height: 12.5em;                /* keep your unified height */
-  padding: 0 40px;                /* room for buttons; adjust if desired */
+  height: 12.5em;
+  /* keep your unified height */
+  padding: 0 40px;
+  /* room for buttons; adjust if desired */
 }
 
 /* Individual slides (responsive column count) */
 .previews.track {
-  --slides-per-view: 3;           /* 3 on desktop */
+  --slides-per-view: 3;
+  /* 3 on desktop */
 }
 
 .previews.track .slide {
@@ -355,7 +449,8 @@ h3 a:hover {
   align-items: stretch;
   justify-content: center;
   height: 100%;
-  background: #000;               /* letterbox for non-matching aspect ratios */
+  background: #000;
+  /* letterbox for non-matching aspect ratios */
   border-radius: 5px;
   text-decoration: none;
 }
@@ -369,8 +464,13 @@ h3 a:hover {
 }
 
 /* Hide default scrollbar (optional; keeps scroll functionality) */
-.previews.track::-webkit-scrollbar { height: 0; }
-.previews.track { scrollbar-width: none; }
+.previews.track::-webkit-scrollbar {
+  height: 0;
+}
+
+.previews.track {
+  scrollbar-width: none;
+}
 
 /* Prev/Next buttons */
 .carousel-btn {
@@ -380,7 +480,7 @@ h3 a:hover {
   width: 28px;
   height: 48px;
   border: none;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0, 0, 0, 0.45);
   color: #fff;
   border-radius: 6px;
   cursor: pointer;
@@ -390,20 +490,31 @@ h3 a:hover {
   user-select: none;
 }
 
-.carousel-btn:hover { background: rgba(0,0,0,0.6); }
-.carousel-btn.prev { left: 6px; }
-.carousel-btn.next { right: 6px; }
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-btn.prev {
+  left: 6px;
+}
+
+.carousel-btn.next {
+  right: 6px;
+}
 
 /* Mobile: show 1 per view */
 @media (max-width: 768px) {
-  .previews.track { --slides-per-view: 1; }
+  .previews.track {
+    --slides-per-view: 1;
+  }
 }
 
 /* keep the carousel below any floated elements above it */
 .previews-carousel {
   display: block;
   clear: both;
-  margin-top: 1.25rem;   /* tweak this spacing as you like */
+  margin-top: 1.25rem;
+  /* tweak this spacing as you like */
 }
 
 /* if you didn't use the wrapper and still use .previews directly */
@@ -417,13 +528,27 @@ h3 a:hover {
 .list-item.highlight.previews-carousel {
   display: block;
   clear: both;
-  margin: 1rem 0;      /* spacing above/below so it won't touch text */
-  line-height: 0;      /* avoid extra vertical gap from line-height */
-  position: relative;  /* anchor for buttons */
+  margin: 1rem 0;
+  /* spacing above/below so it won't touch text */
+  line-height: 0;
+  /* avoid extra vertical gap from line-height */
+  position: relative;
+  /* anchor for buttons */
 }
 
 /* keep the track height; you already set 12.5em elsewhere */
-.previews.track { height: 12.5em; }
+.previews.track {
+  height: 12.5em;
+}
 
 /* ensure arrow buttons are vertically centered within this item */
-.carousel-btn { top: 50%; transform: translateY(-50%); }
+.carousel-btn {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.student-name {
+  display: inline-block;
+  width: 160px;
+  /* 你可以根据最长名字的长度调整这个数值 */
+}
