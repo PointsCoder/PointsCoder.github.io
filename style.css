@@ -176,25 +176,41 @@ h1 {
 
 #intro {
   padding-top: 6em;
-  display: flex;
+  padding-bottom: 3em;
 }
 
-#intro-text {
-  width: 40em;
-  float: left;
+/* Bio and photo share one row; the photo stretches to the height of the bio.
+   Small offsets line the photo edges up with the glyphs:
+   top edge = top of the first bio line,
+   bottom edge = baseline of the "...NVIDIA Graduate Fellowship." line. */
+#intro-row {
+  display: flex;
+  align-items: stretch;
+}
+
+#intro-bio {
+  flex: 1 1 auto;
 }
 
 #intro-image {
-  margin: 3em 0 0 2em;
-  width: 12em;
-  height: 12em;
-  float: left;
+  flex: 0 0 15em;
+  margin: 0.365em 0 0.42em 2.5em;
+  position: relative;
   overflow: hidden;
   border-radius: 1em;
 }
 
 #intro-image img {
-  width: 12em;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 55% 35%;
+}
+
+#intro-links {
+  margin-top: 1.5em;
 }
 
 /**************************************************/
